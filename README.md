@@ -1,0 +1,2 @@
+# TemplateAndroid
+Android项目初始模板，集成了ButterKnife、EventBus、Retrofit2、RxJava系列、BaseRecyclerViewAdapterHelper，初始化了网络请求模块，并示例了几种高频的网络请求方式，同时封装了SharedPreferences，Toast，Dialog等高频组件，适用于小项目快速启动（适用于新手入门，不采用MVC、MVP、MVVM，也没用泛型对请求结果统一处理）
