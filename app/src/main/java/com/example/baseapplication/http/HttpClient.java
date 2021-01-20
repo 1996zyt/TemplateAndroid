@@ -41,7 +41,8 @@ public class HttpClient {
             Interceptor headerInterceptor = chain -> {
                 Request.Builder builder = chain.request().newBuilder()
                         .addHeader("Content-Type", "application/json")
-                        .addHeader("Accept", "application/json");
+                        .addHeader("Accept", "application/json")
+                        .addHeader("token",(String)SharedPreferencesUtil.getParam("token",""));
 
                 String[] cookies = ((String) SharedPreferencesUtil.getParam("cookies", "")).split("-");
                 for (String cookie : cookies) {
